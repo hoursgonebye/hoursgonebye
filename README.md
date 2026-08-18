@@ -27,7 +27,7 @@ Heading for a Computer Science transfer and a career in federal cyber defense.
 
 ---
 
-## Things I have built
+## What I work on
 
 <table>
 <tr>
@@ -77,10 +77,13 @@ tree, a finance ledger, transcript and GPA tracking, 3D printer telemetry and
 a homelab inventory. Sixteen additive schema migrations and test suites that
 run inside the built container image.
 
-The rule I care most about: **nothing derivable is ever stored.** No GPA, XP
+A design rule it holds to: **nothing derivable is ever stored.** No GPA, XP
 total or account balance is a column — they are queries over an append-only
-ledger, so fixing one input re-derives everything downstream instead of
-leaving drift behind.
+ledger, so fixing one input re-derives everything downstream.
+
+> **Built with AI assistance.** I specified it, made the product decisions and
+> run it in production on my own hardware. The implementation is largely
+> AI-generated. I am not going to claim I typed it.
 
 [`opsdeck →`](https://github.com/hoursgonebye/opsdeck)
 
