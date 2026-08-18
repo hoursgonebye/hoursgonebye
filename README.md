@@ -1,76 +1,134 @@
-## Aidan Smith
+<div align="center">
 
-Cybersecurity student at Westchester Community College (AAS, May 2027), heading
-for a Computer Science transfer and a career in federal cyber defense. CompTIA
-**A+**, **Network+**, and **Security+** certified.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:2ea043&height=200&section=header&text=Aidan%20Smith&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=Cybersecurity%20student%20·%20building%20a%20home%20SOC%20·%20heading%20for%20federal%20cyber&descAlignY=54&descSize=15" width="100%" alt="Aidan Smith" />
 
-I learn by building and breaking things I own. Most of what is below runs
-continuously on hardware I own, not in a tutorial.
+<a href="https://www.comptia.org/certifications/a"><img src="https://img.shields.io/badge/CompTIA-A%2B-E31837?style=flat-square&logo=comptia&logoColor=white" alt="CompTIA A+" /></a>
+<a href="https://www.comptia.org/certifications/network"><img src="https://img.shields.io/badge/CompTIA-Network%2B-E31837?style=flat-square&logo=comptia&logoColor=white" alt="CompTIA Network+" /></a>
+<a href="https://www.comptia.org/certifications/security"><img src="https://img.shields.io/badge/CompTIA-Security%2B-E31837?style=flat-square&logo=comptia&logoColor=white" alt="CompTIA Security+" /></a>
+<img src="https://img.shields.io/badge/AAS_Cybersecurity-May_2027-1f6feb?style=flat-square" alt="AAS Cybersecurity, May 2027" />
+<img src="https://img.shields.io/badge/National_Cyber_League-Fall_2026-2ea043?style=flat-square" alt="National Cyber League Fall 2026" />
 
----
-
-### What I run
-
-**Home SOC — Proxmox, Wazuh, Pi-hole**
-A single-node Proxmox hypervisor running unprivileged LXC guests: a Pi-hole DNS
-sinkhole, a dashboard host, and a Wazuh 4.x SIEM with agents on the hypervisor
-and every container. I enumerated the whole estate first, wrote up eight
-severity-rated findings against my own network, and then closed the largest one
-— there was no centralised logging, so the window between compromise and
-discovery was unbounded. The remediation notes include the sequencing hazards,
-because enabling the Proxmox firewall in the wrong order locks you out of your
-own hypervisor.
-
-→ [`Wazuh-Pihole-Deployment`](https://github.com/hoursgonebye/Wazuh-Pihole-Deployment)
-
-**Ops Deck — a self-hosted dashboard**
-A Flask + SQLite application I use daily: boards, calendar, routines, a skill
-tree, finance ledger, transcript/GPA tracking, 3D printer telemetry, and a
-homelab inventory. No frontend framework and no build step — vanilla JS by
-choice. Sixteen additive schema migrations, per-module blueprints, and test
-suites that run inside the built container image.
-
-The design rule I care most about: **nothing that can be derived is ever
-stored.** No GPA, XP total, or account balance is a column. They are all
-queries over an append-only ledger, so correcting one input re-derives every
-figure downstream instead of leaving drift behind.
-
-→ [`opsdeck`](https://github.com/hoursgonebye/opsdeck)
-
-**Cyberdeck — a portable RF/wireless testing deck**
-Raspberry Pi 5 with a battery/UPS HAT, a BB Q20 keyboard on I²C behind an
-out-of-tree driver, GPS on the header UART, a CC1101 sub-GHz transceiver on
-SPI, an RTL-SDR, and an MT7612U adapter verified in monitor mode. Two boards
-died to shorts before this one; the build log documents the failures as
-carefully as the successes.
-
-→ [`cyberdeck`](https://github.com/hoursgonebye/cyberdeck)
+</div>
 
 ---
 
-### Competing
+I learn by building and breaking things I own. Everything below runs
+continuously on hardware I own, not in a tutorial — a Proxmox hypervisor, a
+SIEM watching it, a dashboard I use daily, and a handheld RF deck I have
+killed two boards building.
 
-**National Cyber League**, Fall 2026 season — Gymnasium, Individual and Team
-games. Nine categories: OSINT, cryptography, password cracking, log analysis,
-network traffic analysis, forensics, scanning, web exploitation, and enumeration
-and exploitation.
+Heading for a Computer Science transfer and a career in federal cyber defense.
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=linux,debian,docker,python,flask,sqlite,bash,js,html,css,git,raspberrypi,vim&theme=dark&perline=13" alt="Linux, Debian, Docker, Python, Flask, SQLite, Bash, JavaScript, HTML, CSS, Git, Raspberry Pi, Vim" />
+
+</div>
+
+---
+
+## Things I have built
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ Home SOC
+**Proxmox · Wazuh · Pi-hole · Tailscale**
+
+A single-node hypervisor running unprivileged LXC guests, with a Wazuh SIEM
+and agents on the host and every container.
+
+I enumerated the estate first, wrote up **eight severity-rated findings against
+my own network**, then closed the largest — there was no centralised logging,
+so the window between compromise and discovery was unbounded.
+
+The remediation notes include the sequencing hazards, because enabling the
+firewall in the wrong order locks you out of your own hypervisor.
+
+[`Wazuh-Pihole-Deployment →`](https://github.com/hoursgonebye/Wazuh-Pihole-Deployment)
+
+</td>
+<td width="50%" valign="top">
+
+### 📟 Cyberdeck
+**Raspberry Pi 5 · SDR · sub-GHz · GPS**
+
+A portable RF and wireless testing deck: BB Q20 keyboard on I²C behind an
+out-of-tree driver, GPS on the header UART, a CC1101 transceiver on SPI, an
+RTL-SDR, and an MT7612U verified in monitor mode.
+
+Two boards died to shorts before this one. The build log documents the
+failures as carefully as the successes, including why there is deliberately
+no fusing anywhere in it.
+
+[`cyberdeck →`](https://github.com/hoursgonebye/cyberdeck)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📊 Ops Deck
+**Flask · SQLite · vanilla JS, no build step**
+
+A self-hosted dashboard I use every day: boards, calendar, routines, a skill
+tree, a finance ledger, transcript and GPA tracking, 3D printer telemetry and
+a homelab inventory. Sixteen additive schema migrations and test suites that
+run inside the built container image.
+
+The rule I care most about: **nothing derivable is ever stored.** No GPA, XP
+total or account balance is a column — they are queries over an append-only
+ledger, so fixing one input re-derives everything downstream instead of
+leaving drift behind.
+
+[`opsdeck →`](https://github.com/hoursgonebye/opsdeck)
+
+</td>
+<td width="50%" valign="top">
+
+### 🐍 Foundations
+**Python, written to understand rather than to import**
+
+Magic-number file type detection, a XOR stream cipher, Base64 encode/decode,
+and a terminal ticket tracker.
+
+Deliberately unpolished and kept that way — each exists because I wanted to
+understand one idea by implementing it. The first practical security lesson
+in the set is that a file extension is a naming convention, not a fact.
+
+[`python-fundamentals →`](https://github.com/hoursgonebye/python-fundamentals)
+
+</td>
+</tr>
+</table>
 
 ---
 
-### Currently
+## Currently
 
-- Cybersecurity AAS at WCC, graduating May 2027
-- IT work-study on the WCC help desk
-- Studying toward a CS transfer and the **CyberCorps: Scholarship for Service** program
-- Working through TryHackMe and building out the lab above
+| | |
+|---|---|
+| 🎓 | Cybersecurity AAS at Westchester Community College, graduating **May 2027** |
+| 🖥️ | IT work-study on the college help desk |
+| 🎯 | Studying toward a CS transfer and the **CyberCorps: Scholarship for Service** |
+| 🚩 | **National Cyber League** Fall 2026 — Gymnasium, Individual and Team games |
+| 🔧 | Hardening the lab: backups, firewall policy, and network segmentation next |
 
-### Tools I actually use
+<div align="center">
 
-`Linux` `Proxmox` `Docker` `Wazuh` `Pi-hole` `Tailscale`
-`Python` `Flask` `SQLite` `Bash` `Git` `Kali` `SDR`
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=hoursgonebye&layout=compact&langs_count=6&hide=html&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1f6feb&text_color=c9d1d9" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=hoursgonebye&layout=compact&langs_count=6&hide=html&theme=default&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoursgonebye&layout=compact&langs_count=6&hide=html&theme=github_dark&hide_border=true" alt="Most used languages" width="380" />
+</picture>
 
----
+<br />
 
 <sub>Most of my work lives in the repositories above rather than in a résumé.
 If something here is interesting, the commit histories and build logs are the
 honest version.</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2ea043,50:1f6feb,100:0d1117&height=120&section=footer" width="100%" alt="" />
+
+</div>
