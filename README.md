@@ -21,7 +21,7 @@ Heading for a Computer Science transfer and a career in federal cyber defense.
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=linux,debian,docker,python,flask,sqlite,bash,js,html,css,git,raspberrypi,vim&theme=dark&perline=13" alt="Linux, Debian, Docker, Python, Flask, SQLite, Bash, JavaScript, HTML, CSS, Git, Raspberry Pi, Vim" />
+<img src="https://skillicons.dev/icons?i=linux,debian,docker,python,bash,git,raspberrypi,vim&theme=dark&perline=8" alt="Linux, Debian, Docker, Python, Bash, Git, Raspberry Pi, Vim" />
 
 </div>
 
@@ -39,12 +39,13 @@ Heading for a Computer Science transfer and a career in federal cyber defense.
 A single-node hypervisor running unprivileged LXC guests, with a Wazuh SIEM
 and agents on the host and every container.
 
-I enumerated the estate first, wrote up **eight severity-rated findings against
-my own network**, then closed the largest — there was no centralised logging,
-so the window between compromise and discovery was unbounded.
+I installed and run the hypervisor and the DNS sinkhole. The estate was then
+enumerated and assessed against **eight severity-rated findings**, and the
+largest was closed — there was no centralised logging, so the window between
+compromise and discovery was unbounded.
 
-The remediation notes include the sequencing hazards, because enabling the
-firewall in the wrong order locks you out of your own hypervisor.
+> **AI-assisted.** The Proxmox install and Pi-hole are mine. The SIEM
+> deployment and the written security assessment were done with AI help.
 
 [`Wazuh-Pihole-Deployment →`](https://github.com/hoursgonebye/Wazuh-Pihole-Deployment)
 
@@ -58,9 +59,12 @@ A portable RF and wireless testing deck: BB Q20 keyboard on I²C behind an
 out-of-tree driver, GPS on the header UART, a CC1101 transceiver on SPI, an
 RTL-SDR, and an MT7612U verified in monitor mode.
 
-Two boards died to shorts before this one. The build log documents the
-failures as carefully as the successes, including why there is deliberately
-no fusing anywhere in it.
+Two boards died to shorts before this one — my wiring, my diagnosis, my
+soldering iron. The build log documents the failures as carefully as the
+successes, including why there is deliberately no fusing anywhere in it.
+
+> **AI-assisted.** The physical build and troubleshooting are mine. Driver
+> integration and software bring-up were done with AI help.
 
 [`cyberdeck →`](https://github.com/hoursgonebye/cyberdeck)
 
@@ -96,9 +100,10 @@ ledger, so fixing one input re-derives everything downstream.
 Magic-number file type detection, a XOR stream cipher, Base64 encode/decode,
 and a terminal ticket tracker.
 
-Deliberately unpolished and kept that way — each exists because I wanted to
-understand one idea by implementing it. The first practical security lesson
-in the set is that a file extension is a naming convention, not a fact.
+**Written by hand, no AI.** Deliberately unpolished and kept that way — each
+exists because I wanted to understand one idea by implementing it. The first
+practical security lesson in the set is that a file extension is a naming
+convention, not a fact.
 
 [`python-fundamentals →`](https://github.com/hoursgonebye/python-fundamentals)
 
@@ -120,13 +125,8 @@ in the set is that a file extension is a naming convention, not a fact.
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Python-620k-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/JavaScript-310k-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/CSS-89k-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
-<img src="https://img.shields.io/badge/C-59k-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
-<img src="https://img.shields.io/badge/Shell-12k-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
-
-<sub>Bytes of code across public repositories.</sub>
+<sub>Where a project was built with AI assistance, its card says so.<br />
+The hardware, the Proxmox install, and the Python foundations are my own hands.</sub>
 
 <br />
 
