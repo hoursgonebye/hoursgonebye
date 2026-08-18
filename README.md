@@ -117,11 +117,13 @@ in the set is that a file extension is a naming convention, not a fact.
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=hoursgonebye&layout=compact&langs_count=6&hide=html&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=1f6feb&text_color=c9d1d9" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=hoursgonebye&layout=compact&langs_count=6&hide=html&theme=default&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoursgonebye&layout=compact&langs_count=6&hide=html&theme=github_dark&hide_border=true" alt="Most used languages" width="380" />
-</picture>
+<img src="https://img.shields.io/badge/Python-620k-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/JavaScript-310k-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/CSS-89k-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
+<img src="https://img.shields.io/badge/C-59k-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+<img src="https://img.shields.io/badge/Shell-12k-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
+
+<sub>Bytes of code across public repositories.</sub>
 
 <br />
 
