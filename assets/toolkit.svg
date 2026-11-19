@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="88" viewBox="0 0 1200 88">
+<rect width="1200" height="88" rx="8" fill="#071216"/>
+<rect x="0" y="0" width="4" height="88" fill="#36fca0"/>
+<text x="25" y="36" font-family="monospace" font-size="14" fill="#36fca0">03 /</text>
+<text x="91" y="37" font-family="monospace" font-size="22" font-weight="bold" fill="#e8fff5">TECHNICAL TOOLKIT</text>
+<text x="91" y="63" font-family="monospace" font-size="13" fill="#7c9c93">Languages / analysis / infrastructure</text>
+<path d="M1060 44h100m-16-8 16 8-16 8" stroke="#27765b" fill="none"/>
+</svg>
