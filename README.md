@@ -1,139 +1,78 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:2ea043&height=200&section=header&text=Aidan%20Smith&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=Cybersecurity%20student%20·%20building%20a%20home%20SOC%20·%20heading%20for%20federal%20cyber&descAlignY=54&descSize=15" width="100%" alt="Aidan Smith" />
+# Aidan Smith
 
-<a href="https://www.comptia.org/certifications/a"><img src="https://img.shields.io/badge/CompTIA-A%2B-E31837?style=flat-square&logo=comptia&logoColor=white" alt="CompTIA A+" /></a>
-<a href="https://www.comptia.org/certifications/network"><img src="https://img.shields.io/badge/CompTIA-Network%2B-E31837?style=flat-square&logo=comptia&logoColor=white" alt="CompTIA Network+" /></a>
-<a href="https://www.comptia.org/certifications/security"><img src="https://img.shields.io/badge/CompTIA-Security%2B-E31837?style=flat-square&logo=comptia&logoColor=white" alt="CompTIA Security+" /></a>
-<img src="https://img.shields.io/badge/AAS_Cybersecurity-May_2027-1f6feb?style=flat-square" alt="AAS Cybersecurity, May 2027" />
-<img src="https://img.shields.io/badge/National_Cyber_League-Fall_2026-2ea043?style=flat-square" alt="National Cyber League Fall 2026" />
+**Cybersecurity student · Python & data analysis · Homelab enthusiast**
 
-</div>
+Westchester Community College · AAS Cybersecurity, May 2027  
+CompTIA A+ · Network+ · Security+
 
----
-
-I learn by building and breaking things I own. Everything below runs
-continuously on hardware I own, not in a tutorial — a Proxmox hypervisor, a
-SIEM watching it, a dashboard I use daily, and a handheld RF deck I have
-killed two boards building.
-
-Heading for a Computer Science transfer and a career in federal cyber defense.
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=linux,debian,docker,python,bash,git,raspberrypi,vim&theme=dark&perline=8" alt="Linux, Debian, Docker, Python, Bash, Git, Raspberry Pi, Vim" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Linux-0D1117?style=flat-square&logo=linux&logoColor=white" alt="Linux" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" />
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
 
 </div>
 
 ---
 
-## What I work on
+I explore security, systems, and data through practical projects. My recent work focuses on Python analysis, model training, and clear explanations of results and limitations.
+
+## Recent projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🛡️ Home SOC
-**Proxmox · Wazuh · Pi-hole · Tailscale**
+### [PyTorch Pass/Fail Classifier](https://github.com/hoursgonebye/pytorch-pass-fail-classifier)
 
-A single-node hypervisor running unprivileged LXC guests, with a Wazuh SIEM
-and agents on the host and every container.
+Binary classification with a small fictional dataset, a training loop, and baseline evaluation.
 
-I installed and run the hypervisor and the DNS sinkhole. The estate was then
-enumerated and assessed against **eight severity-rated findings**, and the
-largest was closed — there was no centralised logging, so the window between
-compromise and discovery was unbounded.
-
-> **AI-assisted.** The Proxmox install and Pi-hole are mine. The SIEM
-> deployment and the written security assessment were done with AI help.
-
-[`Wazuh-Pihole-Deployment →`](https://github.com/hoursgonebye/Wazuh-Pihole-Deployment)
+<sub>Python · PyTorch · Jupyter</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 📟 Cyberdeck
-**Raspberry Pi 5 · SDR · sub-GHz · GPS**
+### [Linear Regression from Scratch](https://github.com/hoursgonebye/numpy-linear-regression-from-scratch)
 
-A portable RF and wireless testing deck: BB Q20 keyboard on I²C behind an
-out-of-tree driver, GPS on the header UART, a CC1101 transceiver on SPI, an
-RTL-SDR, and an MT7612U verified in monitor mode.
+Linear regression and gradient descent in NumPy, with error analysis and a held-out test comparison.
 
-Two boards died to shorts before this one — my wiring, my diagnosis, my
-soldering iron. The build log documents the failures as carefully as the
-successes, including why there is deliberately no fusing anywhere in it.
-
-> **AI-assisted.** The physical build and troubleshooting are mine. Driver
-> integration and software bring-up were done with AI help.
-
-[`cyberdeck →`](https://github.com/hoursgonebye/cyberdeck)
+<sub>Python · NumPy · Matplotlib</sub>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 📊 Ops Deck
-**Flask · SQLite · vanilla JS, no build step**
+### [pandas Game Score Analysis](https://github.com/hoursgonebye/pandas-game-score-analysis)
 
-A self-hosted dashboard I use every day: boards, calendar, routines, a skill
-tree, a finance ledger, transcript and GPA tracking, 3D printer telemetry and
-a homelab inventory. Sixteen additive schema migrations and test suites that
-run inside the built container image.
+Cleaning missing and duplicate records, summarizing player performance, and exporting results.
 
-A design rule it holds to: **nothing derivable is ever stored.** No GPA, XP
-total or account balance is a column — they are queries over an append-only
-ledger, so fixing one input re-derives everything downstream.
-
-> **Built with AI assistance.** I specified it, made the product decisions and
-> run it in production on my own hardware. The implementation is largely
-> AI-generated. I am not going to claim I typed it.
-
-[`opsdeck →`](https://github.com/hoursgonebye/opsdeck)
+<sub>Python · pandas · Matplotlib</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### 🐍 Foundations
-**Python, written to understand rather than to import**
+### [NumPy Game Score Analysis](https://github.com/hoursgonebye/numpy-game-score-analysis)
 
-Magic-number file type detection, a XOR stream cipher, Base64 encode/decode,
-and a terminal ticket tracker.
+Exploring average scores, consistency, and round-by-round trends in fictional game data.
 
-**Written by hand, no AI.** Deliberately unpolished and kept that way — each
-exists because I wanted to understand one idea by implementing it. The first
-practical security lesson in the set is that a file extension is a naming
-convention, not a fact.
-
-[`python-fundamentals →`](https://github.com/hoursgonebye/python-fundamentals)
+<sub>Python · NumPy · Matplotlib</sub>
 
 </td>
 </tr>
 </table>
 
+## Beyond the notebooks
+
+- IT work-study on the college help desk.
+- Home lab with Proxmox, Wazuh, and Pi-hole.
+- Preparing for a Computer Science transfer and a career in cybersecurity.
+
 ---
 
-## Currently
-
-| | |
-|---|---|
-| 🎓 | Cybersecurity AAS at Westchester Community College, graduating **May 2027** |
-| 🖥️ | IT work-study on the college help desk |
-| 🎯 | Studying toward a CS transfer and the **CyberCorps: Scholarship for Service** |
-| 🚩 | **National Cyber League** Fall 2026 — Gymnasium, Individual and Team games |
-| 🔧 | Hardening the lab: backups, firewall policy, and network segmentation next |
-
 <div align="center">
-
-<sub>Where a project was built with AI assistance, its card says so.<br />
-The hardware, the Proxmox install, and the Python foundations are my own hands.</sub>
-
-<br />
-
-<sub>Most of my work lives in the repositories above rather than in a résumé.
-If something here is interesting, the commit histories and build logs are the
-honest version.</sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2ea043,50:1f6feb,100:0d1117&height=120&section=footer" width="100%" alt="" />
-
+<sub>Security · Systems · Data</sub>
 </div>
+
