@@ -17,9 +17,7 @@ CompTIA A+ · Network+ · Security+
 
 ---
 
-I explore security, systems, and data through practical projects. My recent work focuses on Python analysis, model training, and clear explanations of results and limitations.
-
-## Recent projects
+# Recent projects
 
 <table>
 <tr>
